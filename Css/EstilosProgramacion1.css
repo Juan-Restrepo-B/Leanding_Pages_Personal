@@ -1,0 +1,104 @@
+/*Estructura Color y Caligrafia*/
+:root {
+    --Primario: greenyellow;
+    --PrimarioOscuro: rgb(163, 221, 75);
+    --Secundario: #3d3d3d;
+    --Secundario1: #6d6d6d;
+    --Secundario2: rgb(32, 26, 117);
+    --Blanco: #FFF;
+    --Negro: #000;
+
+    --FuentePrincipal: ;
+    --FuenteSecundaria: ;
+}
+
+/*Section 2*/
+.section2 {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     padding-bottom: 10px;
+}
+.container2_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container2_2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 250px;
+    background-color: #2a2a2a;
+}
+.percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.percent svg {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);  
+}
+.percent svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: #191919;
+    stroke-width: 2;
+    transform: translate(5px, 5px);  
+}
+.percent svg circle:nth-child(2) {
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.number{
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align-last: center;
+    flex-direction: column;
+}
+.number h3 {
+    font-size: 2.5rem;
+    color: var(--clr);
+}
+.number p {
+    font-size: 1.5rem;
+    color: var(--clr);
+}

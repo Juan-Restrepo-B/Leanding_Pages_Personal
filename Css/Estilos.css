@@ -1,0 +1,254 @@
+/*Estructura Color y Caligrafia*/
+:root {
+    --Primario: greenyellow;
+    --PrimarioOscuro: rgb(163, 221, 75);
+    --Secundario: #3d3d3d;
+    --Secundario1: #6d6d6d;
+    --Secundario2: rgb(32, 26, 117);
+    --Blanco: #FFF;
+    --Negro: #000;
+
+    --FuentePrincipal: ;
+    --FuenteSecundaria: ;
+}
+
+/*Globales*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    color: var(--Primario);
+}
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--Negro);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/*Menu*/
+header {
+    width: 100%;
+}
+
+header ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--Secundario1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header li a {
+    font-size: 2rem;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 5px 32px;
+    text-decoration: none;
+    color: var(--Blanco);
+}
+
+header li a:hover {
+    width: 100%;
+    background-color: var(--Secundario);
+    color: var(--Primario);
+}
+
+header .active {
+    width: 100%;
+    background-color: var(--Negro);
+    color: var(--Primario);
+}
+
+/*Redes Sociales*/
+#RedesSociales {
+    width: 50px;
+    height: 100%;
+    padding-top: 20%;
+    padding-left: 3px;
+    position: fixed;
+}#RedesSociales img {
+    display: block;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+
+/*Regulacion medidas*/
+@media (max-width: 820px) {
+    header {
+        width: 100%;
+    }
+    
+    header ul {
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: var(--Secundario1);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    header li {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header li a {
+        font-size: 1.5rem;
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 5px 32px;
+        text-decoration: none;
+        color: var(--Blanco);
+    }
+    
+    header li a:hover {
+        width: 100%;
+        background-color: var(--Secundario);
+        color: var(--Primario);
+    }
+    
+    header .active {
+        width: 100%;
+        background-color: var(--Negro);
+        color: var(--Primario);
+    }
+    
+    /*Redes Sociales*/
+    #RedesSociales {
+        width: 50px;
+        height: 100%;
+        padding-top:30%;
+        padding-left: 3px;
+        position: fixed;
+    }#RedesSociales img {
+        display: block;
+        padding-bottom: 4px;
+        padding-left: 5px;
+        width: 30px;
+        height: 30px;
+    }
+  }
+
+
+  @media (max-width: 640px) {
+    header {
+        width: 100%;
+    }
+    
+    header ul {
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: var(--Secundario1);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    header li {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header li a {
+        font-size: 1.25rem;
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 5px 32px;
+        text-decoration: none;
+        color: var(--Blanco);
+    }
+    
+    header li a:hover {
+        width: 100%;
+        background-color: var(--Secundario);
+        color: var(--Primario);
+    }
+    
+    header .active {
+        width: 100%;
+        background-color: var(--Negro);
+        color: var(--Primario);
+    }
+    
+    /*Redes Sociales*/
+    #RedesSociales {
+        width: 50px;
+        height: 100%;
+        padding-top:30%;
+        padding-left: 3px;
+        position: fixed;
+    }#RedesSociales img {
+        display: block;
+        padding-bottom: 4px;
+        padding-left: 5px;
+        width: 25px;
+        height: 25px;
+    }
+    }
+   @media (max-width: 450px) {
+    /*Redes Sociales*/
+    #RedesSociales {
+        width: 50px;
+        height: 100%;
+        padding-top:30%;
+        padding-left: 3px;
+        position: fixed;
+    }#RedesSociales img {
+        display: block;
+        padding-bottom: 4px;
+        padding-left: 5px;
+        width: 20px;
+        height: 20px;
+    }
+  }
+   @media (max-width: 350px) {
+    /*Redes Sociales*/
+    #RedesSociales {
+        width: 50px;
+        height: 100%;
+        padding-top:30%;
+        padding-left: 3px;
+        position: fixed;
+    }#RedesSociales img {
+        display: block;
+        padding-bottom: 4px;
+        padding-left: 5px;
+        width: 15px;
+        height: 15px;
+    }
+   }
