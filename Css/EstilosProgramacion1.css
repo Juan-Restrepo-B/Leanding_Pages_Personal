@@ -11,7 +11,9 @@
     --FuentePrincipal: ;
     --FuenteSecundaria: ;
 }
-
+html {
+    overflow: hidden;
+}
 /*Section 2*/
 .section2 {
     box-sizing: border-box;

@@ -11,9 +11,12 @@
     --FuentePrincipal: ;
     --FuenteSecundaria: ;
 }
-
+html{
+    overflow: hidden;
+}
 /*Section 1*/
 .section1 {
+    position: absolute;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
@@ -22,6 +25,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .section1_1 {
     width: 90%;
@@ -44,4 +48,5 @@
 iframe {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
