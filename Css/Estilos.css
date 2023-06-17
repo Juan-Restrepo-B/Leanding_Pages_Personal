@@ -254,10 +254,6 @@ header .active {
         position: fixed;
 
     }#RedesSociales img, svg {
-        display: block;
-        padding-bottom: 4px;
-        padding-left: 5px;
-        width: 15px;
-        height: 15px;
+        display: none;
     }
    }
