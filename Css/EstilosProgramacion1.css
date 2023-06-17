@@ -22,6 +22,15 @@ body::-webkit-scrollbar {
     border: 3px solid var(--Negro);
 }
 
+/*Section 1*/
+.section1 {
+    width: 100%;
+    text-align: center;
+}
+img {
+    width: 100%;
+}
+
 /*Section 2*/
 .section2 {
     box-sizing: border-box;
