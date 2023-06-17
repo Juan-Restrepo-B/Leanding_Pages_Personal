@@ -32,7 +32,15 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
 }
-
+body::-webkit-scrollbar {
+    width: 7px;
+}body::-webkit-scrollbar-track {
+    background: var(--Negro); 
+}body::-webkit-scrollbar-thumb {
+    background-color: var(--Primario);
+    border-radius: 20px;
+    border: 3px solid var(--Negro);
+}
 /*Menu*/
 header {
     width: 100%;
