@@ -120,3 +120,9 @@ img {
     font-size: 1.5rem;
     color: var(--clr);
 }
+
+/*Section 3*/
+.section3 {
+    width: 100%;
+    text-align: center;
+}
